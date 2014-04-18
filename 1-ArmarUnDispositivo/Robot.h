@@ -10,21 +10,16 @@
 
 class Robot {
 public:
-    Robot();
-    Robot(const Robot& orig);
-    virtual ~Robot();
-private:
+    Robot(CajonPilas cajon);
     
+private:
+
 
 };
 
-Robot::Robot() {
+Robot::Robot(CajonPilas cajon) {
+    
 }
 
-Robot::Robot(const Robot& orig) {
-}
-
-Robot::~Robot() {
-}
 #endif	/* ROBOT_H */
 

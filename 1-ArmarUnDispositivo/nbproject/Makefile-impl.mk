@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=ArmarUnDispositivo
+PROJECTNAME=1-ArmarUnDispositivo
 
 # Active Configuration
 DEFAULTCONF=Debug

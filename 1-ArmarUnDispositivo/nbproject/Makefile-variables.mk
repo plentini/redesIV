@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=armarundispositivo
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/armarundispositivo
+CND_ARTIFACT_NAME_Debug=1-armarundispositivo
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/1-armarundispositivo
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=armarundispositivo.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/armarundispositivo.tar
+CND_PACKAGE_NAME_Debug=1-armarundispositivo.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/1-armarundispositivo.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=armarundispositivo
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/armarundispositivo
+CND_ARTIFACT_NAME_Release=1-armarundispositivo
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/1-armarundispositivo
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=armarundispositivo.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/armarundispositivo.tar
+CND_PACKAGE_NAME_Release=1-armarundispositivo.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/1-armarundispositivo.tar
 #
 # include compiler specific variables
 #

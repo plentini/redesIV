@@ -12,7 +12,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>ibandeja.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>robota.cpp</itemPath>
+      <itemPath>robotb.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -29,7 +32,6 @@
     <itemPath>Dispositivo.h</itemPath>
     <itemPath>Pila.h</itemPath>
     <itemPath>Robot.h</itemPath>
-    <itemPath>iBandeja.h</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -49,9 +51,13 @@
       </item>
       <item path="Robot.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="iBandeja.h" ex="false" tool="3" flavor2="0">
+      <item path="ibandeja.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="robota.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="robotb.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -82,9 +88,13 @@
       </item>
       <item path="Robot.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="iBandeja.h" ex="false" tool="3" flavor2="0">
+      <item path="ibandeja.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="robota.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="robotb.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
