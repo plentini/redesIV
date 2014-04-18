@@ -15,9 +15,11 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
+    char mostrar[80];
     CajonPilas cajon1(10);
     Robot robot1(cajon1);
-    
+    sprintf(mostrar,"proceso main");
+    write(fileno(stdout),mostrar,strlen(mostrar));
     
     
     
