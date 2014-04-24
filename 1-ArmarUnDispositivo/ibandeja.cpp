@@ -16,6 +16,11 @@ int main(int argc, char** argv) {
     char mostrar[80];
     sprintf(mostrar,"ibandeja::\n");
     write(fileno(stdout),mostrar,strlen(mostrar));
+    //mpdu m1,*rta;
+    //m1.setHdr("reservar");
+    p_mq cola("iband-compband");
+    //cola.send(m1);
+    cola.del();
     /*
     char *pname;
     int pid;

@@ -13,6 +13,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Bandeja.h</itemPath>
+      <itemPath>componentebandeja.cpp</itemPath>
       <itemPath>ibandeja.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>robota.cpp</itemPath>
@@ -60,6 +61,8 @@
       </item>
       <item path="Semafo.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="componentebandeja.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="ibandeja.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
@@ -100,6 +103,8 @@
       <item path="Robot.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Semafo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="componentebandeja.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ibandeja.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/componentebandeja.o \
 	${OBJECTDIR}/ibandeja.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/robota.o \
@@ -64,6 +65,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/1-armarundispositivo: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/1-armarundispositivo ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/componentebandeja.o: componentebandeja.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/componentebandeja.o componentebandeja.cpp
 
 ${OBJECTDIR}/ibandeja.o: ibandeja.cpp 
 	${MKDIR} -p ${OBJECTDIR}

@@ -12,7 +12,7 @@ class p_mq{
     mqd_t getmq()  {return mq;}
     void send(mpdu msg, unsigned prio=0);
     mpdu* receive();
-		void close(){ mq_close(mq);}
+    void close(){ mq_close(mq);}
     //friend ostream& operator <<(ostream& os, p_mq mq);
  };
 
