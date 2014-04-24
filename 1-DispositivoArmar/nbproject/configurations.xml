@@ -12,11 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Bandeja.h</itemPath>
-      <itemPath>ibandeja.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
-      <itemPath>robota.cpp</itemPath>
-      <itemPath>robotb.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -28,15 +24,10 @@
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
-      <itemPath>mpdu.h</itemPath>
-      <itemPath>p_mq.h</itemPath>
-      <itemPath>xx.h</itemPath>
     </logicalFolder>
-    <itemPath>CajonPilas.h</itemPath>
-    <itemPath>Dispositivo.h</itemPath>
-    <itemPath>Pila.h</itemPath>
-    <itemPath>Robot.h</itemPath>
-    <itemPath>Semafo.h</itemPath>
+    <itemPath>IBandeja.h</itemPath>
+    <itemPath>ibandeja.cpp</itemPath>
+    <itemPath>xx.h</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -48,25 +39,13 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Bandeja.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="CajonPilas.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Dispositivo.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Pila.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Robot.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Semafo.h" ex="false" tool="3" flavor2="0">
+      <item path="IBandeja.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ibandeja.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="robota.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="robotb.cpp" ex="false" tool="1" flavor2="0">
+      <item path="xx.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -89,25 +68,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Bandeja.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="CajonPilas.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Dispositivo.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Pila.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Robot.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Semafo.h" ex="false" tool="3" flavor2="0">
+      <item path="IBandeja.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ibandeja.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="robota.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="robotb.cpp" ex="false" tool="1" flavor2="0">
+      <item path="xx.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

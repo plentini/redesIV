@@ -7,16 +7,18 @@
 
 #include "xx.h"
 
-using namespace std;
-
 /*
  * 
  */
 int main(int argc, char** argv) {
     
     char mostrar[80];
-    sprintf(mostrar,"proceso hijo!!!");
+    sprintf(mostrar,"\x1b[1;36m Robot A:: \x1b[1;m\n ");
     write(fileno(stdout),mostrar,strlen(mostrar));
+    
+    const char * clave="clave";
+    
+    
 
     return 0;
 }

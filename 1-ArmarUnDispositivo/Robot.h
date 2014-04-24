@@ -10,16 +10,18 @@
 
 class Robot {
 public:
-    Robot(CajonPilas cajon);
+    Robot(CajonPilas cajon,int inicial);
     
 private:
 
 
 };
 
-Robot::Robot(CajonPilas cajon) {
+Robot::Robot(CajonPilas cajon,int inicial) {
     int parametro; //parámetro a pasar al proceso hijo
-    unsigned childpid; //pid del hijo
+    unsigned childpid1;
+    unsigned childpid2; 
+    unsigned childpid3; //pid del hijo
     char mostrar[80];
     char *pname;   //nombre del programa
     static char el_parametro[14]; //parámetro string para el proceso hijo
@@ -37,20 +39,46 @@ Robot::Robot(CajonPilas cajon) {
     /* Si entre el fork y la exec no se usa ninguna variable del proceso
      padre, Linux usa COW*/
     
-    if ((childpid = fork())<0){/*Se crea el proceso hijo */
+    if ((childpid1 = fork())<0){/*Se crea el proceso hijo */
         perror("Error en el fork");
         exit(1);
     }
     
-    if((childpid == 0)) {
+    if((childpid1 == 0)) {
         /* PROCESO HIJO (child)*/
         
         execlp("./robota","robota",el_parametro,(char *)0);
         /* si sigue es que no se ejecuto correctamente el comando exclp*/
         exit(3);
     }
-    sprintf(mostrar,"proceso padre");
-    write(fileno(stdout),mostrar,strlen(mostrar));
+    if ((childpid2 = fork())<0){/*Se crea el proceso hijo */
+        perror("Error en el fork");
+        exit(1);
+    }
+    
+    if((childpid2 == 0)) {
+        /* PROCESO HIJO (child)*/
+        
+        execlp("./robotb","robotb",el_parametro,(char *)0);
+        /* si sigue es que no se ejecuto correctamente el comando exclp*/
+        exit(3);
+    }
+    
+    if(inicial== 1){
+        if ((childpid3 = fork())<0){/*Se crea el proceso hijo */
+            perror("Error en el fork");
+            exit(1);
+        }
+        if((childpid3 == 0)) {
+        /* PROCESO HIJO (child)*/
+            execlp("./ibandeja","ibandeja",el_parametro,(char *)0);
+            /* si sigue es que no se ejecuto correctamente el comando exclp*/
+            exit(3);
+        }
+    }
+    
+    //sprintf(mostrar,"proceso padre");
+    //write(fileno(stdout),mostrar,strlen(mostrar));
     
 }
 
