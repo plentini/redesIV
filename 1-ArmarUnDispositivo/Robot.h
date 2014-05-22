@@ -21,7 +21,8 @@ Robot::Robot(CajonPilas cajon,int inicial) {
     int parametro; //parámetro a pasar al proceso hijo
     unsigned childpid1;
     unsigned childpid2; 
-    unsigned childpid3; //pid del hijo
+    unsigned childpid3; 
+    unsigned childpid4; //pid del hijo
     char mostrar[80];
     char *pname;   //nombre del programa
     static char el_parametro[14]; //parámetro string para el proceso hijo
@@ -75,6 +76,18 @@ Robot::Robot(CajonPilas cajon,int inicial) {
             /* si sigue es que no se ejecuto correctamente el comando exclp*/
             exit(3);
         }
+        
+        if ((childpid4 = fork())<0){/*Se crea el proceso hijo */
+            perror("Error en el fork");
+            exit(1);
+        }
+        if((childpid4 == 0)) {
+        /* PROCESO HIJO (child)*/
+            execlp("./componentebandeja","componentebandeja",el_parametro,(char *)0);
+            /* si sigue es que no se ejecuto correctamente el comando exclp*/
+            exit(3);
+        }
+        
     }
     
     //sprintf(mostrar,"proceso padre");

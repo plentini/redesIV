@@ -1,4 +1,4 @@
-all: main robota robotb ibandeja
+all: main robota robotb ibandeja componentebandeja
 
 main.o : main.cpp xx.h
 	g++ -Wall main.cpp -c -pthread -lrt
@@ -19,3 +19,8 @@ ibandeja.o : ibandeja.cpp xx.h Semafo.h
 	g++ -Wall ibandeja.cpp -c -pthread -lrt
 ibandeja : ibandeja.o
 	g++ -Wall ibandeja.o -o ibandeja -pthread -lrt
+	
+componentebandeja.o : componentebandeja.cpp xx.h Semafo.h 
+	g++ -Wall componentebandeja.cpp -c -pthread -lrt
+componentebandeja : componentebandeja.o
+	g++ -Wall componentebandeja.o -o componentebandeja -pthread -lrt
