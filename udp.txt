@@ -1,0 +1,13 @@
+sock_dgram(udp)
+---------------
+setsocketopt()
+IPPROTO_IP flags
+IP_ADD_MEMBERSHIP => join
+IP_DROP_MEMBERSHIP => leave
+IP_MULTICAST_IF interface para enviar multicast
+IP_MULTICAST_TTL Time to live
+IP_MULTICAST_LOOP si hay que enviar una copia
+
+
+el rpc bind es obligatorio que sea root
+rpc.local

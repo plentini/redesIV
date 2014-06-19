@@ -23,7 +23,7 @@ AS=as
 # Macros
 CND_PLATFORM=GNU-Linux-x86
 CND_DLIB_EXT=so
-CND_CONF=Release
+CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 
@@ -35,9 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/iAlmacenero.o \
-	${OBJECTDIR}/iEncargado.o \
-	${OBJECTDIR}/lanzador.o
+	${OBJECTDIR}/listener.o \
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/sender.o
 
 
 # C Compiler Flags
@@ -58,26 +58,26 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/3-generador-de-ordenes
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejemplomulticast
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/3-generador-de-ordenes: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejemplomulticast: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/3-generador-de-ordenes ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejemplomulticast ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/iAlmacenero.o: iAlmacenero.cpp 
+${OBJECTDIR}/listener.o: listener.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/iAlmacenero.o iAlmacenero.cpp
+	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/listener.o listener.c
 
-${OBJECTDIR}/iEncargado.o: iEncargado.cpp 
+${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/iEncargado.o iEncargado.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
 
-${OBJECTDIR}/lanzador.o: lanzador.cpp 
+${OBJECTDIR}/sender.o: sender.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/lanzador.o lanzador.cpp
+	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/sender.o sender.c
 
 # Subprojects
 .build-subprojects:
@@ -85,7 +85,7 @@ ${OBJECTDIR}/lanzador.o: lanzador.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/3-generador-de-ordenes
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejemplomulticast
 
 # Subprojects
 .clean-subprojects:
